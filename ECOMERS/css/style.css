@@ -1,0 +1,164 @@
+/*paul irish me permite que se applique este boxsize a todos los elementeos*/
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;/** 1 REM = 10 pixeles**/
+  }
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+
+  body {
+    font-family: 'PT Sans Narrow', sans-serif;/**letras bajamos de googlefont**/
+    font-size: 1.6rem;/** buen tamaño para las fuentes 16px**/
+    line-height: 2;/**interlineado**/
+  }
+
+  a {
+    text-decoration: none;
+  }
+
+  h1, h2, h3 {
+    margin: 0 0 5rem 0;/** eliinar la margen que traen por defecto**/
+  }
+
+  h1 {
+    font-size: 5rem;
+  }
+
+  h2 {
+    font-size: 4rem;
+  }
+
+  h3 {
+    font-size: 3rem;
+  }
+
+
+   ImagenesEcommerce {
+    max-width: 100%;
+    display: block;
+   }
+
+
+/*h1 {
+    font-size: 20px;
+    color: rgb(0 0 0);
+}*/
+.nombre-sitio {
+    margin-top: 5rem;
+    text-align: center;
+}
+
+
+.nombre-sitio span {
+    color: #037bc0;
+}
+
+.contenedor-navegacion {
+    border-color: #1e1e1e;
+    border-top-style: solid;/*tipo*/
+    border-width: 2px;
+}
+.contenedor{
+    max-width: 120rem;
+    margin: 0 auto;
+    
+  }
+
+  .contenedor a {
+    font-size: 2rem;
+  }
+
+
+
+.Nav-principal{
+ /* ancho*/
+    /* border-top: 2px solid #1e1e1e; es la version corta para hacer lo mismo de los 3 renglones de arriba*/
+    padding: 2rem; /*50 top, 0 right, 30 bottom, 20 left*/
+    display: flex;/*se pone para activar las erraminetas de flexbox*/
+    /* flex-direction: row; */
+    justify-content: space-between;/* me va a disribuir todo los enlaces que contiene el nav horizontalmente*/
+    /* flex-direction: column;me va a distribuir los enlaces por medio de aling-items verticalmente */
+    /* height: 300px; */
+}
+.hero{
+    background-image: url(../ImagenesEcommerce/principal.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;/**horizontal y vertical se muestra el centro de la imagen**/
+    height: 55rem;
+}
+/**categorias**/
+.categorias{
+    padding-top: 5rem;/** le da un poco de separacion en la parte superior al titulo**/
+}
+
+.categorias h2{
+    text-align: center;
+}
+.categorias a{
+    text-align: center;
+    display: block;
+    padding: 2rem;/** es para alejar un poco los enlaces de la imagen**/
+    font-size: 2rem;/** es para modificar el tamaño de las letras dentro de esa categoria**/
+}
+.categorias a:hover{/** seudoselector, que cuando me posiciono sobre el elemento se va a poner de un color**/
+    background-color: #037bc0;
+    color: #ffffff;/** esto hace que la letra me cambie de color cuando me posiciono sobre el elemento**/
+    font-size: 35px;/**esto ace que cuando me posiciono en la letra se vea mas grande**/
+    /* border-radius: 20px; /** se bordea todas las esquinas**/
+    /**border-top-left-radius: 30px;/** se bordean solo la esquina superior izquierda**/
+    border-bottom-right-radius: 2rem;/**se bordea la esqina inferior derecha**/
+    border-bottom-left-radius: 2rem;
+}
+.Listado-categorias{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;/** separacion entre imagenes**/
+}
+/** box model**/
+
+.sobre-nosotros{
+    background-color: blueviolet;
+    width: 20rem;
+    padding: 2.5rem; /*la cantidad de pixeles que se aleja de la caja, igual por los 4 lados/*
+    box-sizing: border-box; /*se me acomoda exactamente al width que yo le di*/
+}
+
+.sobre-empresa{
+    background-color: rosybrown;
+    width: 50rem;
+    padding: 10rem;
+}
+
+
+
+/*modulos, se crea la clase y selecciono c/u de sus
+elementos por medio de sus etuqietas*/
+
+/*.Navegacion {
+    background-color: violet;
+
+}
+.Navegacion a{
+    text-transform: uppercase;
+}*/
+
+/*.enlace{
+    text-transform: uppercase;
+    font-weight: bold; /* volver la letra mas gruesa 
+    text-decoration: none; /* quitar la ralla de abajo de los enlaces 
+    color: #037bc0;
+}
+
+.color-rojo{
+    color: red; /* solo las que tienen la color-rojo
+}*/
+
+/*display inline y block*/
+/* p{
+    background-color: aqua;
+    width: 500px;
+    height: 100px;
+    display: inline-block;
+} */
